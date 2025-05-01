@@ -1,3 +1,8 @@
-build/
+# build artefacts
+tinydb
 *.o
-*.db
+/build
+# editor stuff
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
