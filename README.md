@@ -9,4 +9,3 @@ Milestones:
 4. B-tree indexing
 5. Extras (update, delete, metrics)
 
-> “What I cannot create, I do not understand.” — Richard Feynman
