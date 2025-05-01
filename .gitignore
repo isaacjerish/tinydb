@@ -2,6 +2,5 @@ tinydb
 *.o
 /build
 .vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-*.dSYM/
+.tinydb.dSYM/*
+.gitignore
