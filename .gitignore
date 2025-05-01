@@ -1,6 +1,14 @@
+# ignore the compiled binary
 tinydb
+
+# object files
 *.o
-/build
-.vscode/*
-.tinydb.dSYM/*
-.gitignore
+
+# build directory
+/build/
+
+# VS Code settings
+.vscode/
+
+# macOS debug symbol bundles
+*.dSYM/
