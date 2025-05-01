@@ -4,3 +4,4 @@ tinydb
 .vscode/*
 !.vscode/tasks.json
 !.vscode/launch.json
+*.dSYM/
