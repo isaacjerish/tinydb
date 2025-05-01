@@ -9,20 +9,15 @@
 int main(void)
 {
     char input[INPUT_BUFFER_SIZE];
-
     while (true) {
         printf("tinydb> ");
         if (!fgets(input, sizeof(input), stdin)) {
-            printf("\n");      /* handle Ctrl-D */
+            printf("\n"); 
             break;
         }
-
-        /* Strip trailing newline */
         size_t len = strlen(input);
         if (len && input[len - 1] == '\n')
             input[len - 1] = '\0';
-
-        /* Meta-commands start with a dot */
         if (input[0] == '.') {
             if (strcmp(input, ".exit") == 0) {
                 puts("Bye!");
@@ -31,8 +26,6 @@ int main(void)
             printf("Unrecognized meta-command '%s'\n", input);
             continue;
         }
-
-        /* Placeholder for SQL-like statements */
         printf("Unrecognized keyword at start of '%s'\n", input);
     }
     return 0;
